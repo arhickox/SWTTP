@@ -6,6 +6,11 @@ h1 {
     text-align: center;
 }
 
+.index_subHeader {
+    text-align: center;
+    margin: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -36,4 +41,30 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.obligationHeader {
+    text-align: center;
+}
+
+
+.dutyHeader {
+    text-align: center;
+}
+
+.moralityHeader {
+    text-align: center;
+}
+
+.emotionalSW {
+    margin: 10px;
+    text-align: center;
+}
+
+.emotionalStrength {
+    background-color: #bae1ff;
+}
+
+.emotionalWeakness {
+    background-color: #ffb3ba;
 }
