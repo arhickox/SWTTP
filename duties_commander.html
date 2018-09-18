@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>### Duties</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>### Duties</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Duty Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting duty (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Duty</li>
+                                        <li>3 Players: 15 Duty</li>
+                                        <li>4 Players: 10 Duty</li>
+                                        <li>5 Players: 10 Duty</li>
+                                        <li>6+ Players: 5 Duty</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random duty</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomDuty();" id="generateDutyButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="dutyHeader">Camaraderie</h2>
+                <p>Each fighting unit is a family of sorts, and this is equally true within the ranks of the Alliance military
+                        These Commanders seek to bring the troops together in a way that fosters trust, respect, and pride.
+                        By fostering the bonds that develop between comrades in combat, Commanders are able to strengthen
+                        morale and drive their people to fight harder and better than other, similar units. Unfortunately,
+                        camaraderie can have unfortunate results—alienation from fellow units, instances of hazing and initiation
+                        within the ranks, and overconfidence in the face of overwhelming odds.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Combat Victory</h2>
+                <p>Not only is victory in battle necessary to the continued success of the Rebel Alliance, but it is also
+                        a measuring stick by which Commanders are judged against their peers. Commanders must lead their
+                        troops successfully for them to win, and troops' failures on the battlefield are inevitably linked
+                        to their Commander’s failure to lead them.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Enemy Demoralization</h2>
+                <p>Undermining enemies’ psychological ability to wage war is just as important as defeating them in battle.
+                        Commanders realize this, and do their best to ensure that the Empire suffers every defeat on a psychological
+                        level. By fostering a unit's notoriety, a Commanders can ensure that that its reputation precedes
+                        it among the enemy, thereby weakening the enemy’s resolve before a fight even begins. Once a battle
+                        is won, a Commander must ensure that the enemy knows it’s been soundly beaten, though the Commander
+                        must take care not to resort to the Empire’s brand of brutality.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Intelligence</h2>
+                <p>Commanders who focus on intelligence-gathering seek to take as many prisoners as possible, and they expect
+                        their troops to keep an eye out for sources of information that can be used against the enemy. They
+                        take great interest in interrogating captured foes, often doing the work themselves to ensure that
+                        every salient detail is pinpointed and exploited. This micromanagement can be detrimental, however,
+                        as it has the potential to distract Commanders from their other duties. Likewise, their methods as
+                        interrogators can shape others’ perception of both their units and themselves.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Internal Security</h2>
+                <p>These Commanders are fastidious about ensuring the loyalty of their troops, weeding out threats to their
+                        units from within, and punishing infractions. Success in this endeavor ensures that their troops
+                        are ready for anything, without any fear of betrayal or weakness. If they are too harsh or openly
+                        suspicious of their own, Commanders can adversely affect the morale of their troops, causing them
+                        to be overly cautious of their own actions lest they be seen as liabilities to their leader's command.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Loss Prevention</h2>
+                <p>Ensuring that their troops are as safe as possible under battlefield conditions is these Commanders' primary
+                        concern. They never send their troops into hopeless situations in which defeat is certain, preferring
+                        instead to preserve their unit’s strength for meaningful battles if sacrifices must be made. If taken
+                        too far, this ideology can result in weak commanding officers who lose ground because they aren’t
+                        even willing to try. They may gain a reputation for cowardice, which harms both discipline and their
+                        own chances for advancement.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Political Support</h2>
+                <p>Gaining support from political entities is this Commander’s objective. Whether a politician or merely
+                        a guerilla fighter who desires to gain the support of a subjugated populace, this Commander sees
+                        political support as an efficient means of gaining victory on a grassroots level. More than conquering
+                        hearts and minds, this Commander seeks to actively help local populations as much in their day-to-day
+                        lives as in their efforts to resist their oppressors. Such Commanders expect their troops to respect
+                        the indigenous peoples and attempt to keep collateral damage to a minimum.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Recruiting</h2>
+                <p>Whether it’s to replace losses or merely to bolster their ranks, these Commanders seek to engage like-minded
+                        individuals and convince them that their best contribution to the war effort can be made within the
+                        Rebel Alliance. Such Commanders are always on the lookout for new prospects, though care must be
+                        tak</p>
+                <hr>
+                <h2 class="dutyHeader">Resource Acquisition</h2>
+                <p>These Commanders know that proper equipment is also an essential component to victory, and the Alliance
+                        is always in short supply when it comes to weapons, rations, and other goods. With each battle their
+                        troops fight, these Commanders look for opportunities to enrich the supplies available to their troops
+                        and their auxiliaries. They take time to schedule raids on sources of Imperial equipment when possible,
+                        though they must be careful not to chase every carrot the Empire dangles in front of them, in order
+                        to avoid falling into traps.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Space Superiority</h2>
+                <p>Though planetary engagements are important to the overall war effort, space and air superiority are both
+                        crucial to the success of the troops on the ground. Whether these Commanders command a capital ship,
+                        a wing of fighter craft, or a ground-pounding infantry unit, they seek to ensure that the Rebel Alliance
+                        controls the skies as well as the stars.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">tech Procurement</h2>
+                <p>These Commanders ask for ingenuity and innovation from their troops. Even if their units aren’t gifted
+                        with state-of-the-art weapons, they expect them to use what they have to the best of their ability,
+                        and to make improvements where they can in order to improve their situation. These Commanders are
+                        often more concerned with subordinates who are technologically or mechanically inclined, leaning
+                        on them to provide an extra edge for the rest of their unit.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Support</h2>
+                <p>These Commanders' biggest assets are the troops who serve in their unit. They believe that by supporting
+                        their troops, they can increase the combat effectiveness of their unit and ensure that trust and
+                        morale are properly maintained. These Commanders must be approachable, even by the lowliest private,
+                        and they must be willing to learn what drives their troops—their thoughts, fears, desires, and goals,
+                        both as individuals and as Rebels. By helping their people achieve their goals, they make their units
+                        stronger and better able to meet the challenges posed by the Imperial war machine.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomDuty() {
+                        var duties = new Array("Camaraderie", "Combat Victory", "Enemy Demoralization", "Intelligence", "Internal Security", "Loss Prevention", "Political Support", "Recruiting", "Resource Acquisition", "Space Superiority", "Tech Procurement", "Support", "Re-roll twice, and split your duty evenly between the two you roll");
+                        var random = duties[Math.floor(Math.random() * duties.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

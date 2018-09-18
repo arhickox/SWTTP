@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Hired Gun Obligations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+        <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668; Back</button></a>
+
+
+                <h1>Hired Gun Obligations</h1>
+       
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Obligation Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting obligation (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Obligation</li>
+                                        <li>3 Players: 15 Obligation</li>
+                                        <li>4 Players: 10 Obligation</li>
+                                        <li>5 Players: 10 Obligation</li>
+                                        <li>6+ Players: 5 Obligation</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random obligation</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomOb();" id="generateObButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="obligationHeader">Bounty</h2>
+                <p>This is a twist on the standard bounty Obligation. Somewhere in the galaxy is a target that the Hired
+                        Gun failed to kill, and he is still out there, victimizing the innocent or bragging about his survival.
+                        The character must deal with this being, whether because the escaped target may be a danger to him,
+                        or that he feels obligated to bring in the one that got away.</p>
+                <hr>
+                <h2 class="obligationHeader">Dutybound</h2>
+                <p>The Hired Gun was once saved from certain death, or an unfulfilled contract, by someone he would never
+                        have expected to aid him. He knows that debt is due someday and he's going to have to save someone
+                        in turn. This focuses the Dutybound Obligation on the Hired Gun's stock-in-trade: fighting and killing.</p>
+                <hr>
+                <h2 class="obligationHeader">Responsibility</h2>
+                <p>Some say (with good reason) that Hired Guns should not make friends. A personal relation of the character
+                        is another Hired Gun or similar career, and not a very good one. The character helped him once, and
+                        he is out there in the wider galaxy fumbling around, causing trouble for himself and others. Because
+                        of that one act of kindness, he might call upon the character to help him at any time.</p>
+                <hr>
+                <h2 class="obligationHeader">Favor</h2>
+                <p>Favors are often an obligation in a Hired Gun's past. Many start their careers with either a mentor or
+                        a sponsor, and owe that person for their support. In the case of the mentor, the Hired Gun might
+                        be more than willing to repay past support with a favor now that he's made it in the galaxy. Other
+                        sponsors, however, might have been less altruistic about supporting the Hired Gun's career. The favors
+                        they call in could be something the Hired Gun finds unsavory or even morally wrong.</p>
+                <hr>
+                <h2 class="obligationHeader">Family</h2>
+                <p>The character has struggled out of the slime pits at the very bottom of galactic society with an almost
+                        pathological frenzy to escape everything from his past. And yet, some residual family obligation
+                        still remains. Maybe it is a younger brother or sister, or maybe a parent or close friend, but someone
+                        still cares for the Hired Gun, and he still cares for that person, no matter how much he wishes he
+                        did not. If some enemy or creditor were to discover these ties, they could easily be used against
+                        the character, and fear of this is a constant worry.</p>
+                <hr>
+                <h2 class="obligationHeader">Adrenaline Rush</h2>
+                <p>The character is addicted to the rush of adrenaline he gets from battle. It was this character flaw that
+                        cost him his position at the upper levels of society. Now he must feed the addiction or the results
+                        turn ugly indeed. The character cannot back down from a fight of any kind, and often goes in search
+                        of conflict when things get too tame for his tastes. Should the character go an entire session without
+                        combat of some kind, the GM may add a penalty of &#9632 to any skill checks in the next session (or
+                        until the character gets a chance to fight).</p>
+                <hr>
+                <h2 class="obligationHeader">Debt</h2>
+                <p>Maintaining equipment, staying current with technology, and keeping weapons charged or fully loaded is
+                        not easy. Without these things, the Hired Gun has no hope of employment. The character found himself
+                        grounded without sufficient funds to prepare for a job and had to borrow money from an underworld
+                        figure. That outstanding debt now chases him from job to job. As the PC is unable to pay in credits,
+                        the debtor demands services as payment, often at the most inopportune times. The Hired Gun can reduce
+                        this Obligation by performing services for his debtor, but at the GM's discretion can also increase
+                        his Obligation for money (never more than once per session, and for a few thousand credits per point
+                        of Obligation increase).</p>
+                <hr>
+                <h2 class="obligationHeader">Collateral Accountability</h2>
+                <p>In the pursuit of a past contract, the character was careless. He accidentally destroyed the prized possession
+                        of some major underground figure or killed someone important to that person. Now the figure holds
+                        it over the character's head. Ambiguous threats and demands for repayment have become near-constants
+                        in this character's life, as the underground figure refuses to let him forget his responsibility.
+                        He has a financial blood price or other compensation he could pay, but it is astronomical. Until
+                        it is paid off, however, the guilt and fear are ever-present. If this Obligation is triggered, the
+                        character can suffer &#9632 to some or all skill checks during the session (at the GM's discretion) due
+                        to this burden on his nerves.</p>
+                <hr>
+                <h2 class="obligationHeader">A Score to Settle</h2>
+                <p>The character has always been rough-and-tumble, but somewhere along the way someone wronged him, and he
+                        never forgets a debt, real or imagined. This could be as simple as someone promising him backup who
+                        then disappeared or someone bad-mouthing him in front of a prospective client. Now, the character
+                        is always looking for ways to even the score.</p>
+                <hr>
+                <h2 class="obligationHeader">Betrayal</h2>
+                <p>The character comes from a culture where military service is seen as a righteous calling, and is only
+                        pursued for noble ends. The people who trained him do not look fondly upon his mercenary career path.
+                        Efforts to correct this might range from representatives trying to convince him to stop to assassins
+                        sent to end his sullying their name once and for all. Here, the Hired Gun has committed the perceived
+                        betrayal, and since his career choice is what's at stake, squaring this Obligation can prove very
+                        tricky.</p>
+                <hr>
+                <h2 class="obligationHeader">Oath</h2>
+                <p>The oath a Hired Gun makes is likely something to do with a mission he must complete or his own code of
+                        honor. He might have sworn to finish some violent and incredibly risky undertaking, or he could have
+                        promised to uphold a set of rules of conduct in warfare that are hard to follow.</p>
+                <hr>
+                <h2 class="obligationHeader">The Price of a Name</h2>
+                <p>The character claimed to be someone else, taking credit for his accomplishments in a past negotiation
+                        in the hopes of a higher payday. The wronged party, either the person impersonated or the hiring
+                        party, is now angry. This enemy might respond by chasing down the character, spreading news of the
+                        duplicity, or demanding restitution to his reputation or his credit account.</p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomOb() {
+                        var obligations = new Array("Bounty", "Dutybound", "Responsibility", "Favor", "Family",
+                                "Adrenaline Rush", "Debt", "Collateral Accountability", "A Score to Settle", "Betrayal", "Oath", "The Price of a Name", "Re-roll twice, and split your obligation evenly between the two you roll");
+                        var random = obligations[Math.floor(Math.random() * obligations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>
