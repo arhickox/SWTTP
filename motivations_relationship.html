@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>General Motivations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="motivations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Relationships</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Motivation Generator
+                        </div>
+                        <div class="card-body">
+                                <h5 class="card-title" id="message">Click button below to generate a random motivation (although you are encouraged to select your own)</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomMotivation();" id="generateMotivationButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="motivationHeader">Place of Origin</h2>
+                <p>The character is deeply prideful of where he grew up. This could be a specific planet, town, space station,
+                        or ship. The character strives to better the place of origin and its people and will defend it with his life.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Pet</h2>
+                <p>The character is close with a pet or animal companion of some sort, a relatively small non-combatant.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Childhood Friend</h2>
+                <p>The character maintains ties with a friend from his childhood. Although the two may be a galaxy apart,
+                        the character desires only the best for his companion.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Comrades</h2>
+                <p>The character shows loyalty to those he serves alongside. This could be either the current group of PCs. former
+                        military buddies, or business associates.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Sibling/Siblings</h2>
+                <p>The character has one or more siblings with whom he maintains close contact. The sibling or siblings are
+                        unlikely to be combatants and this Motivation may or may not fall in line with a character's Relationship Obligation.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Mentor</h2>
+                <p>The character is particularly close to a mentor, professor, teacher or other figure that provided support,
+                        knowledge, and wisdom to him in his early years.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Parents</h2>
+                <p>The character has close ties with his parents {or a single parent) and seeks their constant approval. This may or
+                        may not be a healthy or supportive situation.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Extended Family/Clan</h2>
+                <p>The character has a large extended family, clan, or tribe that he deeply loves. He seeks both their
+                        comfort and approval despite the many voices clamoring in his ear for attention.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Droid Companion</h2>
+                <p>The character possesses a fondness for a particular droid This could be a former family servant, his
+                        ships astromech droid, or his trusty protocol droid. This may include a PC droid.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Former Nemesis</h2>
+                <p>The character formed a close bond with a former nemesis or rival. Although things are patched between
+                        them, the two could still be extremely competitive.
+                </p>
+                <hr>
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomMotivation() {
+                        var motivations = new Array("Place of Origin", "Pet", "Childhood Friend", "Comrades", "Sibling/Siblings", "Mentor", "Parents", "Extended Family/Clan", "Droid Companion", "Former Nemesis");
+                        var random = motivations[Math.floor(Math.random() * motivations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

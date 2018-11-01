@@ -68,3 +68,17 @@ a {
 .emotionalWeakness {
     background-color: #ffb3ba;
 }
+
+@font-face {
+    font-family: aurebesh;
+    src: url(fonts/aurebesh.ttf);
+}
+
+.aurebesh_under {
+    font-family: aurebesh;
+    text-align: center;
+}
+
+.weaponBody {
+    padding: 30px;
+}
