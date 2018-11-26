@@ -82,3 +82,12 @@ a {
 .weaponBody {
     padding: 30px;
 }
+
+.adversaryBody {
+    padding: 30px;
+}
+
+.adversaries_mainStats {
+    color: red;
+}
+
