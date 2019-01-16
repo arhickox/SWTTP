@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -46,6 +48,8 @@
     <a href="species_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668; Back</button></a>
 
     <h1>Kalleran</h1>
+    <h5 class="aurebesh_under">kalleran</h5>
+
     <img src="images/species/kalleran.png" class="species_img" height="330" width="110">
     <br>
 
@@ -126,7 +130,9 @@
             </div>
             <div class="row justify-content-md-center">
               <div class="col col-lg-6">
-                <p><b>Hypersensitive Antennae: </b>: Kallerans begin the game with the <u>Heightened Awareness talent</u>.
+                <p><b>Hypersensitive Antennae: </b>: Kallerans begin the game with the <a href="#" tabindex="0" data-toggle="popover"
+                    data-trigger="focus" data-popover-content="#1a"><u>Heightened Awareness talent</u>
+                  </a>.
                 </p>
               </div>
             </div>
@@ -325,6 +331,15 @@
       </div>
     </div>
 
+    <div id="1a" class="hidden" style="display: none">
+      <div class="popover-heading">Heightened Awareness</div>
+      <div class="popover-body">Allies within close range of the character add <span style="color: lightblue;"><i class="fas fa-square"></i></span>
+        to their Perception and Vigilance checks. Allies engaged with him add <span style="color: lightblue;"><i class="fas fa-square"></i>
+          <i class="fas fa-square"></i></span> instead.
+      </div>
+    </div>
+
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -333,6 +348,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
 
   <div class="footer_bar"></div>
 </body>
