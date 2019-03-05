@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Diplomat Duties</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Diplomat Duties</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Duty Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting duty (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Duty</li>
+                                        <li>3 Players: 15 Duty</li>
+                                        <li>4 Players: 10 Duty</li>
+                                        <li>5 Players: 10 Duty</li>
+                                        <li>6+ Players: 5 Duty</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random duty</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomDuty();" id="generateDutyButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="dutyHeader">Counter-Intelligence</h2>
+                <p>The Rebel Alliance rarely operates in the open. The rest of the time, the Player Character recognizes
+                        the importance of maintaining a low profile. Whether by locating clandestine meeting points, by fabricating
+                        cover stories for suspicious activities, or by finding people willing to turn a blind eye to a Rebel
+                        presence, the PC's goal is to keep the Empire oblivious.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Intelligence</h2>
+                <p>When collecting sensitive and valuable information, the Alliance rarely has the luxury of verifying it
+                        before taking the risk of action Instead, the party supplying the intelligence must be trusted. Conversely,
+                        the one supplying the intelligence must trust that the information will not be used against him.
+                        The PC specializes in finding contacts who can be trusted, building their trust in the Rebel Alliance,
+                        and maintaining that trust.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Internal Security</h2>
+                <p>The Rebellion must deal with the potential for betrayal by allies as well as by internal operatives. A
+                        Rebel-friendly equipment vendor disclosing his customer registry could be just as damaging as a Rebel
+                        operative going rogue. The PC seeks to validate the trust placed in Alliance members and allies.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Operation Planning</h2>
+                <p>Efficient use of resources is a key to the success of the Rebel Alliance. Rebel strikes must be carefully
+                        organized to be as effective as possible, while consuming minimal supplies. The Rebellion can tolerate
+                        few losses. The PC recognizes this and takes it upon himself to ensure that each mission is engineered
+                        for success, with nothing forgotten or wasted.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Personnel</h2>
+                <p>To make his unit function at its best, the PC builds discipline and skill among Rebel groups. The PC sees
+                        to it that the rookie pilot learns from the seasoned veteran, the tactician has time to study formations,
+                        and the communications officer has the latest codes.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Political Support</h2>
+                <p>The PC sees that for the Rebellion to grow beyond a small insurrection to become a credible threat to
+                        the Empire, the opinion of the populace must favor the Rebellion. In addition to brokering deals
+                        with the locals, the PC is a master publicist, making the life of the Rebels seem glorious, righteous,
+                        and exciting. Additionally, the PC voices grievances for the Empire's injustice, increasing unrest
+                        with the life of servitude that the Empire forces upon its citizens.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Recruiting</h2>
+                <p>The Alliance always needs more loyal members, but not everyone can become a full-time operative. The PC
+                        accepts the complicated circumstances of those who might be sympathetic to the Rebellion, seeks them
+                        out, and works within their limits to obtain as much help as possible. The PC ensures that the Rebels
+                        are present and ready to help their friends, and prompts those friends to return the favor. If a
+                        few such associates pledge full allegiance to the Alliance along the way, so much the better.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Resource Acquisition</h2>
+                <p>The PC knows the importance of being properly supplied, as well as the value of being able to count on
+                        supply. Acquiring assets is only the beginning. The better trick is knowing what materiel is in short
+                        supply, where to find that materiel, and how to acquire it. Sometimes a single pair of welding goggles
+                        is more useful than a dozen blasters, and sometimes a single blaster is more useful than all the
+                        goggles in the galaxy. The PC forges alliances that can provide equipment and also deliver it where
+                        it is needed.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Sabotage</h2>
+                <p>Just as accomplishing a mission hinges on more than just equipment and assets, disrupting an enemy mission
+                        can take on many forms as well. The PC sows discord in the Empire's ranks, possibly posing as an
+                        officer and giving conflicting orders, confusing and disrupting communications channels, or even
+                        simply spreading rumors. The greatest triumph comes when a little bit of interference makes the Empire
+                        defeat itself.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Communication Facilitation</h2>
+                <p>The Rebel Alliance is a scattered, often inconsistent organization. Alliance Command occasionally gathers
+                        the fleet for big, critical strikes, but usually individual Rebel cells work independently. The PC
+                        acts as an intermediary between leadership and other Rebel cells, ensuring that his group is coordinated
+                        with others, preventing accidental collisions.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Tech Procurement</h2>
+                <p>Technology can be capricious. Some advances are as concrete as a new astromech droid, while others are
+                        as conceptual as a new fleet formation. The PC seeks both equipment and ideas that are innovative
+                        and advanced, finding ways to incorporate them into Rebel operations. He observes the constant flux
+                        and evolution to discover the ideal use for new items as well as novel uses for old technologies.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Support</h2>
+                <p>Often, Rebel cells are ragtag groups with diverse backgrounds and allegiances, making a little internal
+                        conflict inevitable. When tensions flare and the group splinters, nobody accomplishes their objectives.
+                        The PC seeks to foster cohesion and cooperation, soothing bruised egos and reigning in other Rebels'
+                        wild impulses. As long as the party is operating in unison, the PC is doing his job.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomDuty() {
+                        var duties = new Array("Counter-Intelligence", "Intelligence", "Internal Security", "Operation Planning", "Personnel", "Political Support", "Recruiting", "Resource Acquisition", "Sabotage", "Communication Facilitation", "Tech Procurement", "Support", "Re-roll twice, and split your duty evenly between the two you roll");
+                        var random = duties[Math.floor(Math.random() * duties.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

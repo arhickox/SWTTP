@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Colonist Obligations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Colonist Obligations</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Obligation Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting obligation (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Obligation</li>
+                                        <li>3 Players: 15 Obligation</li>
+                                        <li>4 Players: 10 Obligation</li>
+                                        <li>5 Players: 10 Obligation</li>
+                                        <li>6+ Players: 5 Obligation</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random obligation</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomOb();" id="generateObButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="obligationHeader">Disgraced</h2>
+                <p>The Colonist did something shameful, often some social taboo that isn't quite illegal. The shame and sideways
+                        glances from peers have forced the Colonist to seek a new life where he can start over free of embarrassment.
+                        The isolation of some colonies and cultures makes for some strange taboos not observed by the rest
+                        of the galaxy. Thus the taboo can be something terrible, or something as benign as drinking from
+                        a public fountain or showing a bare but innocuous body part.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Philanderer</h2>
+                <p>Colonies tend to be small places, and if a being gets around, word about it has a tendency to follow close
+                        behind. This Colonist has no shortage of scorned lovers still furious over his or her never committing.
+                        Former flames have a habit of showing up at the worst moment, or causing delays when the chrono is
+                        ticking. The worst is when two or more flings team up to make life miserable for a serial seducer,
+                        or when spouses find out and decide the Colonist is deserving of punishment. Nothing is off limits,
+                        as all is fair in love and war.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Exiled</h2>
+                <p>Going up against politically connected members of the Galactic Empire is a good way to become exiled from
+                        the most civilized of the Core Worlds. The Colonist is not allowed to set foot in the Core, or on
+                        any Imperial-controlled worlds, but is desperate to remove the stain on his reputation. While possible,
+                        the smallest misstep can be disastrous, setting progress back months or even years. There is also
+                        the trouble of bureaucracy and last minute filing deadlines that can draw the character away.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Contracted</h2>
+                <p>The Colonist has entered into a long-term contract with a corporation or government related to his work
+                        at a colony. In many cases, these contracts are how colonists pay their passage to the new world—a
+                        form of indentured servitude. Colonists might be contracted to provide bookkeeping, labor, or any
+                        other number of services. Failure to live up to a contract can result in financial penalties, imprisonment,
+                        deportation, or earning a bounty.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Bounty</h2>
+                <p>This is a variant on the standard Bounty Obligation. The bounty may only be issued locally, without the
+                        weight of the Empire behind it. These bounties are technically illegal, and attract ruthlessly competent
+                        hunters independent of any guild or government. By changing their identity and hiding out in some
+                        obscure backwater colony world, Colonists with this Obligation can avoid detection for years. However,
+                        the level of violence these individuals can bring upon their town when the truly skilled bounty hunters
+                        finally track them down can endanger the whole colony.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Debt</h2>
+                <p>Aside from the running debt most Colonists have at the local cantina, unforeseen financial setbacks are
+                        a regular part of life on a newly colonized world. All the expensive lessons for dealing with restless
+                        natives, flora, fauna, or environmental conditions on that particular planet have yet to be learned.
+                        Most times, the only way to stay afloat is by going to the deepest pockets in town and begging for
+                        a loan.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Favor</h2>
+                <p>A colony often begins life as a small community of a few thousand or even just a few hundred individuals.
+                        When the only sentient life on an entire planet is that sparse, everyone depends on each other and
+                        favors are as valuable as credits. Thirty fellow Colonists might have helped to build a school in
+                        town for a Scholar for nothing more than a hot meal, some warm caf, and a favor. This might mean
+                        helping get the herd in the pen before a storm, loaning credits, or any number of other odd jobs.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Family</h2>
+                <p>Colonists often book passage to a colony world to start life anew for themselves and their families. For
+                        these individuals, making certain their family is safe, healthy, and provided for trumps all other
+                        concerns. A comm from home is just as likely to inspire as it is to devastate a Colonist riding herd
+                        away from the homestead. Some Colonists have already lost members of their family, and instead are
+                        beholden to a final promise, be i t to keep the ranch going or take on the role of family protector.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Responsibility</h2>
+                <p>Colonists, especially those founding a new colony, each have a responsibility to the rest of their fellow
+                        settlers. A character who is the only doctor on an entire planet cannot simply leave. Even going
+                        away for a month could result in dozens of preventable deaths. A moisture farmer's nephew might have
+                        a responsibility to keep condensers in the South Range operating, and runaway droids or not, if the
+                        units aren't working by midday, there will be hell to pay. The colony only has a chance of survival
+                        if everyone does his part .
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Witness Protection</h2>
+                <p>Some Colonists never would have chosen life on a distant backwater, but authorities have deemed it necessary
+                        to hide them in the witness protection program. The Colonist is being hunted by the Hutt Cartels,
+                        Black Sun, the Tenloss Syndicate, or some other galactic-scale criminal organization as a material
+                        witness. The Colonist was given a new identity and sent to an obscure planet to safely await trial,
+                        but the syndicate won't stop looking for him.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Pacifist</h2>
+                <p>This Colonist abhors violence, either out of a sense of morality or cowardice. Witnessing a violent act
+                        can incense or fluster a character so much that he is unable to think straight or control his shaking
+                        hands, or simply disgust him to the point that he can't interact with his fellows. If this obligation
+                        triggers and the PC participates in a violent act , the GM may add &#9632 to any skill checks he makes
+                        for the remainder of the session. (This may be avoided through good roleplaying on the player's part
+                        , such as having his character always try to talk his way out of a fight, and if he's forced to do
+                        battle, only use weapons that stun or incapacitate his opponents)
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Frontier Justice</h2>
+                <p>Life on the frontier is harsh, cruel, and unfair. Bandits and outlaws can get away with murder and more
+                        if the local sheriff is too weak to stop them. Some people are able to let that go and move past
+                        it. When the dead are loved ones, however, some can't just move on. The need to get even is so strong
+                        it dominates the Colonist's thoughts and dreams, causing him to obsess about the moment of exacted
+                        vengeance. The Colonist gladly betrays, abandons, or hurts anyone if it brings him closer to settling
+                        the score.
+                </p>
+                <hr>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomOb() {
+                        var obligations = new Array("Disgraced", "Philanderer", "Exiled", "Contracted", "Bounty", "Debt", "Favor", "Family", "Responsibility", "Witness Protection", "Pacifist", "Frontier Justice", "Re-roll twice, and split your obligation evenly between the two you roll");
+                        var random = obligations[Math.floor(Math.random() * obligations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

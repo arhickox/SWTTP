@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Technician Obligations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Technician Obligations</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Obligation Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting obligation (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Obligation</li>
+                                        <li>3 Players: 15 Obligation</li>
+                                        <li>4 Players: 10 Obligation</li>
+                                        <li>5 Players: 10 Obligation</li>
+                                        <li>6+ Players: 5 Obligation</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random obligation</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomOb();" id="generateObButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="obligationHeader">Crew</h2>
+                <p>The PC has an Obligation to keep a work crew or ship’s complement safe, healthy, and in work. Whether
+                        or not the PC usually travels with the work crew, this character serves as a mediator between the
+                        crew and outside individuals. The PC might owe the debt due from a time the crew saved the PC’s career
+                        or even life through hard work and sacrifice.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Contract</h2>
+                <p>The PC has a pressing contract to fulfill, whether it is legally binding or an informal deal. The contract
+                        may be for providing, installing, or repairing technical items or on-call services. Fulfilling terms
+                        of the contract reduces the character’s Obligation, while putting them off or incurring additional
+                        expenses for the sake of fulfilling the contract might increase it.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Blackmail</h2>
+                <p>Someone has discovered one of the PC’s dirty secrets through slicing or other technical means. The blackmailer
+                        has possession of evidence damaging to the PC’s business, family, or organization. The evidence is
+                        most likely stolen technical data, such as electronic records, holovid recordings, sensor data, maintenance
+                        records, secret computer codes, or similar tech-related items. To keep the secret safe, the PC must
+                        keep the blackmailer happy, possibly through payments or granting favors. The blackmailer is cunning
+                        enough to maintain just enough of a threat to keep benefiting from the situation, but not so much
+                        that the PC decides to allow the release of the evidence or to hunt down the blackmailer to permanently
+                        put an end to the danger the information poses.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Bounty</h2>
+                <p>The PC has an active bounty, earned during an attempt to expose the workings of a criminal or corrupt
+                        organization. The PC might have acquired evidence of the organization’s misdeeds from databanks through
+                        slicing or other technical skulduggery and then attempted to take the information public, whether
+                        this meant presenting it to the authorities or broadcasting it via pirated HoloNet feed. The character’s
+                        background and specialization can both provide additional ideas as to the reason for the bounty.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Criminal</h2>
+                <p>The character has a criminal record or is accused of a crime (rightly or wrongly), most likely for using
+                        technology illegally or providing the means for another to do so. Though the PC is not currently
+                        in custody, there are outstanding warrants for the PC’s arrest. The PC might seek to settle this
+                        Obligation by paying ongoing legal costs or fines, burying evidence, or convincingly demonstrating
+                        innocence in the matter.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Debt</h2>
+                <p>The PC owes someone a great deal, whether in money, goods, or services. The character may owe this group
+                        or individual for loans used to pay for training, buy new equipment, or start a business. Paying
+                        off the debt may be difficult due to the sheer credits value in question, as a result of the constant
+                        accrual of interest that must be paid off, or because of both. The debt might even extend beyond
+                        financial obligation, especially if the PC also has a personal relationship with the lender.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Failed Installation/Repair</h2>
+                <p>A botched modification, installation, or repair job has publicly damaged the character’s reputation and
+                        rendered the device, droid, or vehicle inoperable. The PC must take action to restore the damaged
+                        item, and then find a way to socially engineer a return to good standing in the public eye.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Family</h2>
+                <p>The character’s family demands great deal of time and attention, not just emotionally but also in some
+                        technical capacity. The PC might be the only member of the family able to take care of vital machinery
+                        that sustains the family’s livelihood, food, water, or even air supply, if they live on a space station
+                        or in a hostile planetary environment. Though performing routine maintenance can help keep this Obligation
+                        in check, the PC must seek to engineer a long-term solution—one that does not require constant personal
+                        intervention—to remove this Obligation completely.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Favor</h2>
+                <p>The character owes someone a big favor. Perhaps a government agent looked the other way after catching
+                        the character slicing corporate computers. Perhaps a fellow Technician faked a malfunction or loss
+                        of data to cover for a failure on the PC’s part. The magnitude of the favor is connected to the amount
+                        of Obligation. The Obligation could take an extended amount of time to clear, as it might be reduced
+                        by many small actions.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Unfinished Business</h2>
+                <p>The PC is working on a long-term project such as a complex computer program or a light freighter refit.
+                        It may be personal or commissioned work. While long breaks may be acceptable, the Obligation cannot
+                        be totally fulfilled until the unfinished business is complete, and it weighs heavily on the PC’s
+                        mind whenever the character chooses to postpone working on it for any reason.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Obsession</h2>
+                <p>The PC has an unhealthy obsession with technology, droids, or computers that constantly interferes with
+                        efforts to live a normal life. Whether it is repairing a prized droid, designing the next great piece
+                        of cybernetic technology, or inventing a device that defines the era, the character has a continual
+                        need to pursue this interest. Accomplishing significant tasks to further this goal helps to reduce
+                        the character’s Obligation.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Responsibility</h2>
+                <p>The character feels a strong sense of accountability to or responsibility for a person, place, or thing.
+                        It might be to a business, social group, political movement, group of friends, or individual from
+                        the PC’s past. The character might feel responsibility toward a mentor or an apprentice. Taking care
+                        of major tasks that help fulfill this responsibility reduces the character’s Obligation.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomOb() {
+                        var obligations = new Array("Crew", "Contract", "Blackmail", "Bounty", "Criminal", "Debt", "Failed Installation/Repair", "Family", "Favor", "Unfinished Business", "Obsession", "Responsibility", "Re-roll twice, and split your obligation evenly between the two you roll");
+                        var random = obligations[Math.floor(Math.random() * obligations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

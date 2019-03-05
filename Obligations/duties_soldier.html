@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Soldier Duties</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Soldier Duties</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Duty Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting duty (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Duty</li>
+                                        <li>3 Players: 15 Duty</li>
+                                        <li>4 Players: 10 Duty</li>
+                                        <li>5 Players: 10 Duty</li>
+                                        <li>6+ Players: 5 Duty</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random duty</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomDuty();" id="generateDutyButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="dutyHeader">Clear Skies</h2>
+                <p>This PC recognizes the clanger that infantry units face from enemy air power. A pair of TIE fighters can
+                        turn certain victory on the ground into disaster. This PC always has a plan to take out any enemy
+                        air support, whether through the judicious use of portable launchers, jammers, camouflage, concealing
+                        terrain, or even anti-air emplacement weapons.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Combat Victory</h2>
+                <p>The PC wants to prove that the Rebellion’s armed forces can defeat the Empire in head-to-head battles,
+                        and frequently pushes to launch devastating raids, ambushes, and strikes. This PC believes the only
+                        path to victory is through combat, and that the rebels are more than a match for the Empire any time,
+                        on any battlefield, under any conditions.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Internal Security</h2>
+                <p>Of all the military branches in the Alliance, its army sees the most new recruits. The need for troops
+                        is too great and resources too thin to properly vet the loyalty of every recruit. This PC knows that
+                        one Imperial spy can potentially bring the entire movement down, and eyes all comrades-in-arms with
+                        suspicion, regardless of individual history or deeds.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Intelligance</h2>
+                <p>Knowledge is power, and this PC wants to know everything about the Empire. This Soldier seeks information
+                        at every opportunity, copying Imperial datacores, setting up surveillance cams, or capturing enemy
+                        droids for intel. The key to survival is avoiding the Empire where it is strong, hitting hard where
+                        it is weak, and seeing the difference between the two.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Morale</h2>
+                <p>While the troops of the Rebel Alliance know their cause to be just, the hopeless odds stacked against
+                        them can be demoralizing. This PC knows that to have any hope of victory, the freedom fighters have
+                        to keep their spirits up, and works to help with this via well-timed jokes or inspirational gestures
+                        such as flying the Rebellion’s insignia on the battlefield.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Personnel</h2>
+                <p>The PC epitomizes the military mantra of “no one left behind, " dragging wounded comrades to safety and
+                        striving to get everyone home. This PC puts the lives of fellow Alliance personnel over everything,
+                        including the mission.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Placard Hunter</h2>
+                <p>This PC knows that without effective leadership, the rank and file troops of the Empire are easily dispatched.
+                        In any fight, the Soldier seeks to eliminate the highest-ranking officers on the battlefield. At
+                        worst, the remaining enemies fight in a much less coordinated fashion, but sometimes such losses
+                        cause the foe to retreat.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Psychological Warfare</h2>
+                <p>While the Imperial stormtroopers might appear fearless and disciplined, others within the Imperial Army
+                        and Officer Corps aren’t as willing to die for the Emperor. Some PCs recognize that it is possible
+                        to intimidate, confuse, or frighten an enemy to gain an advantage in an engagement, or avoid one
+                        altogether.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Recruiting</h2>
+                <p>Some Soldiers believe that if they just had a few more brave warriors, they could escalate their war with
+                        the Empire, selecting targets more damaging to the Imperial war effort. PCs with the Recruiting Duty
+                        always look to turn anyone into rebel sympathizers, and sympathizers into fellow members of the Alliance.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Resource Acquisition</h2>
+                <p>The Rebel Alliance is always in desperate need of materiel in the fight against the Empire. Bacta, blaster
+                        gas, and ration bricks win wars. This PC is always searching for sources of the raw materials, food,
+                        clothing, weapons, armor, and other equipment the Alliance needs to continue the fight.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Sabotage</h2>
+                <p>If the Rebellion can’t take something, denying the Empire its use is the next best thing. This PC knows
+                        that Imperial forces are dependent on secure supply lines and storage depots, and destroying or disrupting
+                        any link in the supply chain wreaks havoc with the effectiveness of Imperial troops.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Support</h2>
+                <p>No soldier stands alone, and this PC focuses on standing beside comrades-in-arms. Only while working in
+                        unison can the rebels hope to dent the seemingly invulnerable Galactic Empire. Although this PC might
+                        not be as recognized or awarded honors as often as those he helps, his contribution is every bit
+                        as vital, while helping other PCs pursue their Duties.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomDuty() {
+                        var duties = new Array("Clear Skies", "Combat Victory", "Internal Security", "Intelligence", "Morale", "Personnel", "Placard Hunter", "Psychological Warfare", "Recruiting", "Resource Acquisition", "Sabotage", "Support", "Re-roll twice, and split your duty evenly between the two you roll");
+                        var random = duties[Math.floor(Math.random() * duties.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

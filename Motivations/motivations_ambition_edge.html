@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>General Motivations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="motivations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Ambitions</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Motivation Generator
+                        </div>
+                        <div class="card-body">
+                                <h5 class="card-title" id="message">Click button below to generate a random motivation (although
+                                        you are encouraged to select your own)</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomMotivation();" id="generateMotivationButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="motivationHeader">Friendship</h2>
+                <p>The character seeks to be liked by others and goes out of his way to make a good impression. He may or
+                        may not be gregarious, relying on his actions and deeds to foster friendship.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Love</h2>
+                <p>The character is driven by love or intimacy The character already has a true love or strives to find the
+                        one he is meant to be with.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Freedom</h2>
+                <p>The character desires the freedom to do what he wants This could be a passion to overcome one or more
+                        of his current Obligations or to see others freed from the shackles of bondage and servitude in all
+                        its forms.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Frame</h2>
+                <p>The character seeks the limelight and wants to be famous He wants his deeds and actions to make the HoloNet
+                        for all to see and revels in the attention given by fans and supporters.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Greed</h2>
+                <p>Money is the prime motivator for this character The character may be active in business, investing, or
+                        the tried-and-true method of theft to increase his credit bank.
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Status</h2>
+                <p>The character wants to elevate his social standing—gaining titles, commendations, and accolades. The character
+                        may come from humble beginnings or otherwise strive for a higher position than where he began.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Expertise</h2>
+                <p>The character wants to excel in his chosen profession and constantly practices to achieve perfection.
+                        Alternatively, this character picks a skill or two tn which to excel.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Wanderlust/Novelty</h2>
+                <p>The character is driven to explore the galaxy and rarely stays in one place for long. He's motivated
+                        to uncover remote or unexplored regions and seeing everything that can be seen. Alternatively, this character is driven to
+                        experience new sensations and activities, perhaps rather hedonistically.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Power</h2>
+                <p>The character craves power and authority over others. His rule may not be despotic, but he wants to control his
+                        situation and those around him, often bettering himself in the process.                        
+                </p>
+                <hr>
+                <h2 class="motivationHeader">Religion/Spirituality</h2>
+                <p>The character is both drawn and follows the sway of a particular religious or spiritual calling. This
+                        could be the tenets of the Jedi or the Sith or some other belief.
+                </p>
+                <hr>
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomMotivation() {
+                        var motivations = new Array("Friendship", "Love", "Freedom", "Frame", "Greed", "Status", "Expertise", "Wanderlust/Novelty", "Power", "Religion/Spirituality");
+                        var random = motivations[Math.floor(Math.random() * motivations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>
