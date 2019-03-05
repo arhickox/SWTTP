@@ -4,6 +4,8 @@ This is a constantly in-progress compendium website for the Edge of the Empire, 
 
 It is far from finished, so plain sections like the main index will be visually reworked in time.
 
+[Current Deployed Link](https://arhickox.github.io/SWTTP/)
+
 ## Sections and Progress
 - **Species** - Complete with all current content 
 - **Careers** - In-Progress, some button artwork missing and Age of Rebellion section unfinished
