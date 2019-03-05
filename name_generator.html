@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Name Generator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+    crossorigin="anonymous">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" id="nav_item">
+          <a class="nav-link" href="species_index.html">Species</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="equipment_index.html">Equipment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="class_index.html">Classes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <br>
+  <div class="Container" id="main_box">
+
+    <h1>Name Generator</h1>
+    <br>
+
+    <div class="card">
+      <div class="card-body">
+
+        <h3 class="card-title" id="nameDisplay" style="text-align: center">Generate a Name</h3><br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary" onclick="randomMale();" id="maleButton">Male Name</button>
+          <button type="button" class="btn btn-primary" onclick="randomMaleNickname();" id="maleButtonNickname">Male Name with Nickname</button>
+          <button type="button" class="btn btn-danger" onclick="randomFemale();" id="femaleButton">Female Name</button>
+          <button type="button" class="btn btn-danger" onclick="randomFemaleNickname();" id="femaleButton">Female Name with Nickname</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    function randomMale() {
+      var maleFirstNames = new Array("Paxton","Gault","Aric","Malavai","Talos","Eckard","Hemdil","Nico","Rokuss","Jace","Torian","Koth","Amos","Bouris","Aven","Darbin","Sannus","Jaric","Indo","Khomo","Len","Arfan","Nomen","Lorman","Rasmus","Ruugar","Writch","Cole","Var","Cedral","Tol","Pak","Orgus","Fideltin","Warren","Andronikos","Destris","Nomar","Harron","Brel","Jonas","Markus","Tanno","Corso","Darmas","Diago","Nok","Numen","Rogun","Harridax","Ardun","Vector","Felix","Braden","Zale","Harlon","Gele'ren","Hedarr","Jicoln","Artus","Kellian","Reneget","Tarro","Deron","Heirad","Bulo","Liam","Oric","Marko","Sakan","Xander","Gerold","Vorgan","Valss","Keenor","Andan","Vincine","Velasu","Krel","Vinn","Jindo","Chondrus","Skurr","Velloc","Marlon","Jom","Dakarus","Nayva","Takkan","Adan","Gav","Darian","Balan","Kal","Tir","Yoran","Lan","Sanno","Xan","Narin","Orik","Bellic","Orus","Zai","Zar","Lesin","Tarso","Andur","Conraad","Thades","Angol","Derrus","Choza","Dazh","Veeroa","Rane","Ilyan","Tau","Ashy","Akaavi","Oro","Shai","Cin","Kutri","Syo","Jun","Sano","Valk","Jos","Canni","Jai","Bel","Jin","Keru","Niall");
+      var lastNames = new Array("Rall","Rennow","Jorgan","Tirall","Quinn","Temple","Leyta","Usar","Raabat","Lokin","Tre","Pierce","Ranos","Okarr","Pyron","Rusk","Drellik","Denz","Fess","Malcom","Cadera","Vortena","Visz","Dorne","Shai","Ranken","Kovach","Rike","Tassar","Korven","Arankau","Saganu","Ulgo","Geth","Iven","Rylon","Margok","Coratanni","Sull","Lorik","Kendoh","Hesker","Kilran","Regus","Kaedan","Zal","Jarak","Parvek","Tal","Ramos","Dural","Karr","Wyellett","Yonlach","Dracen","Orlec","Tremel","Blys","Rok","Breev","Vesh","Avesta","Darok","Hurley","Jannik","Cantarus","Belos","Godera","Aves","Daeruun","Korvan","Suthra","Lassicar","Gend","Braga","Carsen","Narezz","Taldine","Din","Saresh","Rans","Idair","Sedoru","Revel","Zavros","Veran","Dray","Kallig","Val","Bessikar","Harkun","Orus","Cormac","Tavus","Garza","Rakton","Balkar","Novar","Locke","Torius","Klerren","Evran","Vik","Spar","Throne","Riggs","Caicos","Pollaran","Hixan","Reneke","Drayen","Brock","Wogana","Tenna","Skavak","Kirill","Aldraste","Adacin","Zanisk","Kothe","Hyllus","Valon","Tykan","Iresso","O'a","Grell","Fess","Bakarn","Par","Ivernus","Yoran","Barrows","Fane","Corwin","Redrish","Soongh","Seros","Lok","Jarro","Vause","Janarus","Lokai","Jarg","Sorno","Cadoruso","Thrica","Ciphas","Draxus","Kreshin","Travik","Goh","Dentiri","Imos","Traless","Ka","Obai","Vodd","Mokan","Do'nair","Kels","Jorland","Alon","Massey","Menerus","Grimyk","Ortol","Zokar","Sairisi","Shivastin","Kreshan","Jenysn","Riilna","Soverus","Renning","Khoris","Modo","Benes","Krupp","Rand","Daksh","Rotham","Taklan","Kyrenic","Edikar","Graege","Thak","Serevin","Boran","Ban","Isric","Vokk","Atrius","Krey","Berani","Wrad","Penzaren","Adelande","Anril","Droub","Quallo","Nerodia","Fenn","Ko","Icarr","Semhess","Shomo","Garnik","Isoder","Kallin","Russco","Tranik","Dram","Moros","Parion","Vir","Torasu","Kadir","Karus","Petrin","Maltu","Zu","Zarr","Tyvan","Ruun","Hok","Grainik","Marasa","Kiros","Grast","Saal","Mur","Hondi","Jind","Branen","Draya","Gair","Vanten","Tyn","Gren","Melor","Zayzen","Grah","Lanos","Zotar","Martilla","Thanar","Kanzin","Noros","Mariin","Kantis","Moria","Drin","Carto","Kellin","Antona","Rhas","Korus","Cestus","Inkari","Inath","Styles");
+      var randomMale = maleFirstNames[Math.floor(Math.random() * maleFirstNames.length)];
+      var randomLast = lastNames[Math.floor(Math.random() * lastNames.length)];
+      var randomMaleFull = randomMale + " " + randomLast;
+      document.getElementById("nameDisplay").innerHTML = randomMaleFull;
+    };
+    function randomFemale() {
+      var femaleFirstNames = new Array("Senya","Raina","Hylo","Elara","Zasha","Cora","Malforia","Gesselle","Anri","Malita","Salana","Thana","Lemda","Tora","Kira","Leeha","Trila","Leontyne","Ashara","Rylee","Rehanna","Kendra","Beryl","Jela","Risha","Elarea","Nadia","Yuon","Thelonia","Mako","Kel'sara","Alvena","Zenta","Ezeraline","Yadira","Sterla","Nyris","Alirra","Hyra",);
+      var lastNames = new Array("Rall","Rennow","Jorgan","Tirall","Quinn","Temple","Leyta","Usar","Raabat","Lokin","Tre","Pierce","Ranos","Okarr","Pyron","Rusk","Drellik","Denz","Fess","Malcom","Cadera","Vortena","Visz","Dorne","Shai","Ranken","Kovach","Rike","Tassar","Korven","Arankau","Saganu","Ulgo","Geth","Iven","Rylon","Margok","Coratanni","Sull","Lorik","Kendoh","Hesker","Kilran","Regus","Kaedan","Zal","Jarak","Parvek","Tal","Ramos","Dural","Karr","Wyellett","Yonlach","Dracen","Orlec","Tremel","Blys","Rok","Breev","Vesh","Avesta","Darok","Hurley","Jannik","Cantarus","Belos","Godera","Aves","Daeruun","Korvan","Suthra","Lassicar","Gend","Braga","Carsen","Narezz","Taldine","Din","Saresh","Rans","Idair","Sedoru","Revel","Zavros","Veran","Dray","Kallig","Val","Bessikar","Harkun","Orus","Cormac","Tavus","Garza","Rakton","Balkar","Novar","Locke","Torius","Klerren","Evran","Vik","Spar","Throne","Riggs","Caicos","Pollaran","Hixan","Reneke","Drayen","Brock","Wogana","Tenna","Skavak","Kirill","Aldraste","Adacin","Zanisk","Kothe","Hyllus","Valon","Tykan","Iresso","O'a","Grell","Fess","Bakarn","Par","Ivernus","Yoran","Barrows","Fane","Corwin","Redrish","Soongh","Seros","Lok","Jarro","Vause","Janarus","Lokai","Jarg","Sorno","Cadoruso","Thrica","Ciphas","Draxus","Kreshin","Travik","Goh","Dentiri","Imos","Traless","Ka","Obai","Vodd","Mokan","Do'nair","Kels","Jorland","Alon","Massey","Menerus","Grimyk","Ortol","Zokar","Sairisi","Shivastin","Kreshan","Jenysn","Riilna","Soverus","Renning","Khoris","Modo","Benes","Krupp","Rand","Daksh","Rotham","Taklan","Kyrenic","Edikar","Graege","Thak","Serevin","Boran","Ban","Isric","Vokk","Atrius","Krey","Berani","Wrad","Penzaren","Adelande","Anril","Droub","Quallo","Nerodia","Fenn","Ko","Icarr","Semhess","Shomo","Garnik","Isoder","Kallin","Russco","Tranik","Dram","Moros","Parion","Vir","Torasu","Kadir","Karus","Petrin","Maltu","Zu","Zarr","Tyvan","Ruun","Hok","Grainik","Marasa","Kiros","Grast","Saal","Mur","Hondi","Jind","Branen","Draya","Gair","Vanten","Tyn","Gren","Melor","Zayzen","Grah","Lanos","Zotar","Martilla","Thanar","Kanzin","Noros","Mariin","Kantis","Moria","Drin","Carto","Kellin","Antona","Rhas","Korus","Cestus","Inkari","Inath","Styles");
+      var randomFemale = femaleFirstNames[Math.floor(Math.random() * femaleFirstNames.length)];
+      var randomLast = lastNames[Math.floor(Math.random() * lastNames.length)];
+      var randomFemaleFull = randomFemale + " " + randomLast;
+      document.getElementById("nameDisplay").innerHTML = randomFemaleFull;
+    };
+    function randomMaleNickname() {
+      var maleFirstNames = new Array("Paxton","Gault","Aric","Malavai","Talos","Eckard","Hemdil","Nico","Rokuss","Jace","Torian","Koth","Amos","Bouris","Aven","Darbin","Sannus","Jaric","Indo","Khomo","Len","Arfan","Nomen","Lorman","Rasmus","Ruugar","Writch","Cole","Var","Cedral","Tol","Pak","Orgus","Fideltin","Warren","Andronikos","Destris","Nomar","Harron","Brel","Jonas","Markus","Tanno","Corso","Darmas","Diago","Nok","Numen","Rogun","Harridax","Ardun","Vector","Felix","Braden","Zale","Harlon","Gele'ren","Hedarr","Jicoln","Artus","Kellian","Reneget","Tarro","Deron","Heirad","Bulo","Liam","Oric","Marko","Sakan","Xander","Gerold","Vorgan","Valss","Keenor","Andan","Vincine","Velasu","Krel","Vinn","Jindo","Chondrus","Skurr","Velloc","Marlon","Jom","Dakarus","Nayva","Takkan","Adan","Gav","Darian","Balan","Kal","Tir","Yoran","Lan","Sanno","Xan","Narin","Orik","Bellic","Orus","Zai","Zar","Lesin","Tarso","Andur","Conraad","Thades","Angol","Derrus","Choza","Dazh","Veeroa","Rane","Ilyan","Tau","Ashy","Akaavi","Oro","Shai","Cin","Kutri","Syo","Jun","Sano","Valk","Jos","Canni","Jai","Bel","Jin","Keru","Niall");
+      var nicknames = new Array("Deadeye","Firehand","Firebrand","Ivory","Stormcaller","Keeper","Eidolon","Sparky","Torch","Bulwark","Mentor","Ripper","Ironfist","Frostfire","Inferno","Oneshot","Havoc","Boulder","Fleetfire","Quickfingers","Trick","Bloodhound","Hammer","Needle","Whisper","Doc","Duke","Nine Fingers","Socket","Lightning","Crosshairs","Durasteel","Trickshot","Wraith","Clutch","Comet","Crasher","Chatter","Flyby","Payload","Glitch","Hawkeye","Hotshot","Jester","Knuckles","Lock","Longshot","Pulsar","Razer","Scythe","Scorch","Sketch","Stance","Switch","Trace","Trapper","Whiplash","Wrecker","Zap","Ice","Babe","Brute","Breaker","Chief","Cyclone","Fritz","Gravedigger","Gamble","Hammerhead","Howl","Judge","Junior","King","Lucky","Little","Red","Thunderbolt","Tiny","Colosses","Monarch","Talon","Ace","Headshot","Phantom");
+      var lastNames = new Array("Rall","Rennow","Jorgan","Tirall","Quinn","Temple","Leyta","Usar","Raabat","Lokin","Tre","Pierce","Ranos","Okarr","Pyron","Rusk","Drellik","Denz","Fess","Malcom","Cadera","Vortena","Visz","Dorne","Shai","Ranken","Kovach","Rike","Tassar","Korven","Arankau","Saganu","Ulgo","Geth","Iven","Rylon","Margok","Coratanni","Sull","Lorik","Kendoh","Hesker","Kilran","Regus","Kaedan","Zal","Jarak","Parvek","Tal","Ramos","Dural","Karr","Wyellett","Yonlach","Dracen","Orlec","Tremel","Blys","Rok","Breev","Vesh","Avesta","Darok","Hurley","Jannik","Cantarus","Belos","Godera","Aves","Daeruun","Korvan","Suthra","Lassicar","Gend","Braga","Carsen","Narezz","Taldine","Din","Saresh","Rans","Idair","Sedoru","Revel","Zavros","Veran","Dray","Kallig","Val","Bessikar","Harkun","Orus","Cormac","Tavus","Garza","Rakton","Balkar","Novar","Locke","Torius","Klerren","Evran","Vik","Spar","Throne","Riggs","Caicos","Pollaran","Hixan","Reneke","Drayen","Brock","Wogana","Tenna","Skavak","Kirill","Aldraste","Adacin","Zanisk","Kothe","Hyllus","Valon","Tykan","Iresso","O'a","Grell","Fess","Bakarn","Par","Ivernus","Yoran","Barrows","Fane","Corwin","Redrish","Soongh","Seros","Lok","Jarro","Vause","Janarus","Lokai","Jarg","Sorno","Cadoruso","Thrica","Ciphas","Draxus","Kreshin","Travik","Goh","Dentiri","Imos","Traless","Ka","Obai","Vodd","Mokan","Do'nair","Kels","Jorland","Alon","Massey","Menerus","Grimyk","Ortol","Zokar","Sairisi","Shivastin","Kreshan","Jenysn","Riilna","Soverus","Renning","Khoris","Modo","Benes","Krupp","Rand","Daksh","Rotham","Taklan","Kyrenic","Edikar","Graege","Thak","Serevin","Boran","Ban","Isric","Vokk","Atrius","Krey","Berani","Wrad","Penzaren","Adelande","Anril","Droub","Quallo","Nerodia","Fenn","Ko","Icarr","Semhess","Shomo","Garnik","Isoder","Kallin","Russco","Tranik","Dram","Moros","Parion","Vir","Torasu","Kadir","Karus","Petrin","Maltu","Zu","Zarr","Tyvan","Ruun","Hok","Grainik","Marasa","Kiros","Grast","Saal","Mur","Hondi","Jind","Branen","Draya","Gair","Vanten","Tyn","Gren","Melor","Zayzen","Grah","Lanos","Zotar","Martilla","Thanar","Kanzin","Noros","Mariin","Kantis","Moria","Drin","Carto","Kellin","Antona","Rhas","Korus","Cestus","Inkari","Inath","Styles");
+      var randomMale = maleFirstNames[Math.floor(Math.random() * maleFirstNames.length)];
+      var randomNickname = nicknames[Math.floor(Math.random() * nicknames.length)]; 
+      var randomLast = lastNames[Math.floor(Math.random() * lastNames.length)];
+      var randomMaleNicknameFull = randomMale + ' "' + randomNickname + '" ' + randomLast;
+      document.getElementById("nameDisplay").innerHTML = randomMaleNicknameFull;
+    };
+    function randomFemaleNickname() {
+      var femaleFirstNames = new Array("Senya","Raina","Hylo","Elara","Zasha","Cora","Malforia","Gesselle","Anri","Malita","Salana","Thana","Lemda","Tora","Kira","Leeha","Trila","Leontyne","Ashara","Rylee","Rehanna","Kendra","Beryl","Jela","Risha","Elarea","Nadia","Yuon","Thelonia","Mako","Kel'sara","Alvena","Zenta","Ezeraline","Yadira","Sterla","Nyris","Alirra","Hyra",);
+      var nicknames = new Array("Deadeye","Firehand","Firebrand","Ivory","Stormcaller","Keeper","Eidolon","Sparky","Torch","Bulwark","Mentor","Ripper","Ironfist","Frostfire","Inferno","Oneshot","Havoc","Boulder","Fleetfire","Quickfingers","Trick","Bloodhound","Hammer","Needle","Whisper","Doc","Duke","Nine Fingers","Socket","Lightning","Crosshairs","Durasteel","Trickshot","Wraith","Clutch","Comet","Crasher","Chatter","Flyby","Payload","Glitch","Hawkeye","Hotshot","Jester","Knuckles","Lock","Longshot","Pulsar","Razer","Scythe","Scorch","Sketch","Stance","Switch","Trace","Trapper","Whiplash","Wrecker","Zap","Ice","Babe","Brute","Breaker","Chief","Cyclone","Fritz","Gravedigger","Gamble","Hammerhead","Howl","Judge","Junior","King","Lucky","Little","Red","Thunderbolt","Tiny","Colosses","Monarch","Talon","Ace","Headshot","Phantom");
+      var lastNames = new Array("Rall","Rennow","Jorgan","Tirall","Quinn","Temple","Leyta","Usar","Raabat","Lokin","Tre","Pierce","Ranos","Okarr","Pyron","Rusk","Drellik","Denz","Fess","Malcom","Cadera","Vortena","Visz","Dorne","Shai","Ranken","Kovach","Rike","Tassar","Korven","Arankau","Saganu","Ulgo","Geth","Iven","Rylon","Margok","Coratanni","Sull","Lorik","Kendoh","Hesker","Kilran","Regus","Kaedan","Zal","Jarak","Parvek","Tal","Ramos","Dural","Karr","Wyellett","Yonlach","Dracen","Orlec","Tremel","Blys","Rok","Breev","Vesh","Avesta","Darok","Hurley","Jannik","Cantarus","Belos","Godera","Aves","Daeruun","Korvan","Suthra","Lassicar","Gend","Braga","Carsen","Narezz","Taldine","Din","Saresh","Rans","Idair","Sedoru","Revel","Zavros","Veran","Dray","Kallig","Val","Bessikar","Harkun","Orus","Cormac","Tavus","Garza","Rakton","Balkar","Novar","Locke","Torius","Klerren","Evran","Vik","Spar","Throne","Riggs","Caicos","Pollaran","Hixan","Reneke","Drayen","Brock","Wogana","Tenna","Skavak","Kirill","Aldraste","Adacin","Zanisk","Kothe","Hyllus","Valon","Tykan","Iresso","O'a","Grell","Fess","Bakarn","Par","Ivernus","Yoran","Barrows","Fane","Corwin","Redrish","Soongh","Seros","Lok","Jarro","Vause","Janarus","Lokai","Jarg","Sorno","Cadoruso","Thrica","Ciphas","Draxus","Kreshin","Travik","Goh","Dentiri","Imos","Traless","Ka","Obai","Vodd","Mokan","Do'nair","Kels","Jorland","Alon","Massey","Menerus","Grimyk","Ortol","Zokar","Sairisi","Shivastin","Kreshan","Jenysn","Riilna","Soverus","Renning","Khoris","Modo","Benes","Krupp","Rand","Daksh","Rotham","Taklan","Kyrenic","Edikar","Graege","Thak","Serevin","Boran","Ban","Isric","Vokk","Atrius","Krey","Berani","Wrad","Penzaren","Adelande","Anril","Droub","Quallo","Nerodia","Fenn","Ko","Icarr","Semhess","Shomo","Garnik","Isoder","Kallin","Russco","Tranik","Dram","Moros","Parion","Vir","Torasu","Kadir","Karus","Petrin","Maltu","Zu","Zarr","Tyvan","Ruun","Hok","Grainik","Marasa","Kiros","Grast","Saal","Mur","Hondi","Jind","Branen","Draya","Gair","Vanten","Tyn","Gren","Melor","Zayzen","Grah","Lanos","Zotar","Martilla","Thanar","Kanzin","Noros","Mariin","Kantis","Moria","Drin","Carto","Kellin","Antona","Rhas","Korus","Cestus","Inkari","Inath","Styles");
+      var randomFemale = femaleFirstNames[Math.floor(Math.random() * femaleFirstNames.length)];
+      var randomNickname = nicknames[Math.floor(Math.random() * nicknames.length)]; 
+      var randomLast = lastNames[Math.floor(Math.random() * lastNames.length)];
+      var randomFemaleNicknameFull = randomFemale + ' "' + randomNickname + '" ' + randomLast;
+      document.getElementById("nameDisplay").innerHTML = randomFemaleNicknameFull;
+    };
+
+
+  </script>
+
+  <div class="footer_bar"></div>
+</body>
+
+</html>

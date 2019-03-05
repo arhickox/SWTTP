@@ -1,0 +1,45 @@
+body {
+    background-image: url(../images/dark_geometric.png);
+}
+
+h1 {
+    text-align: center;
+}
+
+.index_subHeader {
+    text-align: center;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbarSupportedContent {
+    position: absolute;
+    left: 43%;
+}
+
+.card-header {
+    background-color:#777;
+    color: white;
+}
+
+#main_box {
+    background-color: white;
+    width: 960px;
+    padding: 25px;
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    line-height: 30px;
+    overflow: auto;
+}
+
+.adversaryBody {
+    padding: 30px;
+}
+
+.adversaries_mainStats {
+    color: red;
+}

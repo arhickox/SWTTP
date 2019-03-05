@@ -1,0 +1,57 @@
+body {
+    background-image: url(../images/dark_geometric.png);
+}
+
+h1 {
+    text-align: center;
+}
+
+.index_subHeader {
+    text-align: center;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbarSupportedContent {
+    position: absolute;
+    left: 43%;
+}
+
+.card-header {
+    background-color:#777;
+    color: white;
+}
+
+#main_box {
+    background-color: white;
+    width: 960px;
+    padding: 25px;
+    margin: auto;
+    color: #777777;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    line-height: 30px;
+    overflow: auto;
+}
+.species_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: aurebesh;
+    src: url(../fonts/aurebesh.ttf);
+}
+
+.aurebesh_under {
+    font-family: aurebesh;
+    text-align: center;
+}
+
+
+.species_wide_button {
+    margin: 5px 0px 5px 20px;
+}
