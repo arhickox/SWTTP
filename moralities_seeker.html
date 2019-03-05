@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Seeker Moralities</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Seeker Moralities</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Morality Generator
+                        </div>
+                        <div class="card-body">
+
+                                <h5 class="card-title" id="message">Click button below to generate a random morality</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomMorality();" id="generateMoralityButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="moralityHeader">Bravery/Recklessness</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Bravery</b></h5>
+                                        <p>When action is needed, there is no hesitation despite the dangers. The character
+                                                puts aside any fears before acting, whether navigating a ship through hazardous
+                                                routes or engaging in combat against formidable foes.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Recklessness</b></h5>
+                                        <p>While bravery is admirable, refusing to properly analyze a situation before acting
+                                                is not. The character often leaps to act when more forethought would lead
+                                                to other, more prudent decisions.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Love/Jealousy</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Love</b></h5>
+                                        <p>The character is open to love and can cherish the happiness of others. An open
+                                                heart greatly aids the PC when interacting with others, and can lead to strong
+                                                emotional bonds.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Jealousy</b></h5>
+                                        <p>Love can become twisted, especially when one party does not feel it is properly
+                                                reciprocated. The character becomes insecure and resentful, lashing out at
+                                                any perceived rivals.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Caution/Fear</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Caution</b></h5>
+                                        <p>The character gives care and attention to every decision, judging all aspects
+                                                of a situation before undertaking any action. By thinking ahead, the PC avoids
+                                                many poor outcomes.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Fear</b></h5>
+                                        <p>Excessive caution can easily become lost to fear. The PC becomes consumed with
+                                                the potential dangerous outcomes of decisions and actively seeks to avoid
+                                                or even actively flee conflict of any kind.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Enthusiasm/Disarray</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Enthusiasm</b></h5>
+                                        <p>Life experiences are to be eagerly embraced. The character is always open to exploring
+                                                new areas, meeting new people, and attempting new tasks, lest the PC miss
+                                                out on something.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Disarray</b></h5>
+                                        <p>In a rush of enthusiastic energy, there is little attempt to truly appreciate
+                                                or master any one item. The character is easily diverted whenever a new attraction
+                                                appears, often leaving tasks incomplete or threats unresolved.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Empathy/Vengeance</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Empathy</b></h5>
+                                        <p>The character easily understands and even feels the emotions of those nearby,
+                                                even when they are guarding their true feelings. Knowing how their actions
+                                                affect others, the character is careful to treat others with kindness and
+                                                dignity.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Vengeance</b></h5>
+                                        <p>Caring overly for others, especially victims, can lead the character to desire
+                                                revenge against those who made them suffer. Only when such targets are tracked
+                                                down and brought low can balance be restored.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Assertiveness/Obstinacy</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Assertiveness</b></h5>
+                                        <p>In all things, the character is quite determined and steadfast. No matter the
+                                                situation, the PC shows no hint of idleness or weakness in speech or action,
+                                                only firm conviction.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Obstinacy</b></h5>
+                                        <p>Firm convictions can mask an excessively stubborn nature that pushes aside any
+                                                hesitation about or reflection upon a desired goal. The PC’s mind never changes
+                                                once committed, even in light of contradictory evidence.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Curiosity/Obsession</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Curiosity</b></h5>
+                                        <p>The galaxy is filled with wonders, and the goal of any sentient should be to explore
+                                                and expand understanding of everything it presents. The character is always
+                                                interested in learning new things and visiting new locations.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Obsession</b></h5>
+                                        <p>Inquisitiveness about new things leads to intense examination of a single subject
+                                                or item. The character often turns an interest into an obsession to the exclusion
+                                                of all else, and the object of obsession drives the PC’s existence.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Pride/Disdain</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Pride</b></h5>
+                                        <p>The character is rightfully proud of hard-earned abilities and accomplishments.
+                                                Many years have likely been spent in training, study, and meditation; few
+                                                can say they are the PC’s equal.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Disdain</b></h5>
+                                        <p>Pride in one’s self turns dark, and the character views others with utter contempt
+                                                and scorn. None are worthy of the PC’s company; they seem to exist only stand
+                                                in the way.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Independence/Arrogance</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Independence</b></h5>
+                                        <p>Self-reliance is the watchword, for depending on others is a sign of weakness.
+                                                Often refusing aid, the character never counts on others when an action can
+                                                be performed personally.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Arrogance</b></h5>
+                                        <p>A lifetime of independent, successful action breeds a smug and egotistical outlook
+                                                in the character. None are as able as the PC, and this overconfidence can
+                                                easily lead to catastrophe.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Ambition/Cold-heartedness</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Ambition</b></h5>
+                                        <p>The character has set goals, some of which might take years to achieve. With each
+                                                accomplishment there is another step towards an ultimate reward and the satisfaction
+                                                of attainment.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Cold-heartedness</b></h5>
+                                        <p>The drive needed to reach these goals can make the character set aside any concepts
+                                                of compassion. Only the PC’s own personal goals matter, with little care
+                                                if any others are broken and cast aside as he rises.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Justice/Mercilessness</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Justice</b></h5>
+                                        <p>The character lives to see wrongdoers punished and their deeds undone. Seeking
+                                                to make things right regardless of the situation or obstacles, the character
+                                                often acts as arbiter of a personal code.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Mercilessness</b></h5>
+                                        <p>The quest for justice can turn the character away from concepts of pity or remorse.
+                                                The PC is concerned only with laws or a personal code, no matter the situation
+                                                or mitigating factors.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+                <h2 class="moralityHeader">Discipline/Closed-mindedness</h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col emotionalStrength">
+                                        <h5 class="emotionalSW">Emotional Strength: <b>Discipline</b></h5>
+                                        <p>The character is focused on internal mental and physical regimens. Few decisions
+                                                or actions are made without thought. Such is the PC’s control that these
+                                                are rarely made in haste or for poor reasons.
+                                        </p>
+                                </div>
+                                <div class="col emotionalWeakness">
+                                        <h5 class="emotionalSW">Emotional Weakness: <b>Closed-mindedness</b></h5>
+                                        <p>Studious discipline, however, can bring about intolerance and disregard for outside
+                                                input. When deciding a course of action, the character often refuses any
+                                                outside ideas that might deviate from firm internal viewpoints.
+                                        </p>
+                                </div>
+                        </div>
+                        <hr>
+                </div>
+
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                        crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                        crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                        crossorigin="anonymous"></script>
+
+                <script>
+
+                        function randomMorality() {
+                                var moralities = new Array("Bravery/Recklessness", "Love/Jealousy", "Caution/Fear", "Enthusiasm/Disarray", "Empathy/Vengeance", "Assertiveness/Obstinacy", "Curiosity/Obsession",
+                                        "Pride/Disdain", "Independence/Arrogance", "Ambition/Cold-heartedness", "Justice/Mercilessness", "Discipline/Closed-mindedness", "Re-roll twice, and split your motality between the two you roll");
+                                var random = moralities[Math.floor(Math.random() * moralities.length)];
+                                document.getElementById("message").innerHTML = random;
+                        } 
+                </script>
+
+                <div class="footer_bar"></div>
+</body>
+
+</html>

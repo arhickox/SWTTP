@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>General Duties</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>General Duties (Age of Rebellion)</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Duty Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting duty (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Duty</li>
+                                        <li>3 Players: 15 Duty</li>
+                                        <li>4 Players: 10 Duty</li>
+                                        <li>5 Players: 10 Duty</li>
+                                        <li>6+ Players: 5 Duty</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random duty</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomDuty();" id="generateDutyButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="dutyHeader">Combat Victory</h2>
+                <p>The Player Character is driven to show that the Alliance can hold its own against Imperial forces in any
+                        troop vs. troop engagement. He wants to engage the Empire's military—thei r best, whenever possible—and
+                        provide more victories for the Alliance to tout to the galaxy as proof it can ultimately win the
+                        war. This means daring raids, excellent tactics, and acquiring the best firepower possible.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Counter-Intelligence</h2>
+                <p>The PC knows that the survival of the Alliance depends upon its ability to hide from the Empire and avoid
+                        complete destruction at the hands of its overwhelming military superiority. To this end. he wants
+                        to hunt down and eliminate enemy agents and threats, feed false information to Imperial intelligence
+                        networks, and cover the movements of all Alliance assets from observation and reporting.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Intelligence</h2>
+                <p>The PC knows that every victory hinges on knowing as much about the Empire's military might and other
+                        assets as possible. He is driven to gather any and all potentially useful data, wishing to locate
+                        vital and vulnerable targets for Rebellion forces to strike at. He not only wants to know what the
+                        Imperial military factions are up to. but also the state of technological research, economic policies,
+                        and other aspects of Imperial strength.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Internal Security</h2>
+                <p>The most dangerous threat to the Alliance comes from within its own ranks. Any Rebel soldier, operative,
+                        or ally could be an insidious threat waiting to take an action at a critical moment to bring entire
+                        operations crashing down, costing lives and assets. Knowing that vigilance against these threats
+                        is the truest form of devotion to the cause of the Alliance, the PC watches for any and all signs
+                        of betrayal.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Personnel</h2>
+                <p>More than machines, credits, or information, the people of the Alliance are the most important and vital
+                        assets there are, and the Player Character knows this. He is devoted to seeing to their safety, well-being,
+                        and capacity for success. No one should ever be left behind: the most successful missions might not
+                        achieve every goal, but they are successful nonetheless when no one dies.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Political Support</h2>
+                <p>Every blaster, starhghter, and thermal detonator in the galaxy is useless without the political will to
+                        truly challenge and overthrow Palpatine and his New Order The Player Character understands this all
+                        too well and is determined to see to it that as many factions, systems, and sectors as possible come
+                        to the side—and the aid—of the Alliance against the Empire.</p>
+                <hr>
+                <h2 class="dutyHeader">Recruiting</h2>
+                <p>Every engagement with the Empire is a war of attrition, and that is a war the Rebellion simply cannot
+                        win. Nonetheless, more people must be found to serve, and they are needed in every capacity. Not
+                        only does the Alliance military need more soldiers and pilots, it needs more technicians, engineers,
+                        mechanics, scientists, doctors, slicers, and just about every other kind of worker. This Player Character
+                        understands the risks of recruitment, as well as the needs, and is constantly on the lookout for
+                        allies who are both talented and trustworthy.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Resource Acquisition</h2>
+                <p>There are never enough supplies to fully suppor t those fighting against the juggernaut that is the Empire,
+                        and this PC knows it very well. He is determined to seek out new sources of raw materials, food,
+                        clothing, weapons, armor, and equipment of all kinds. One spare crate of medpacs can save quite a
+                        few lives, and a handful of comlinks can mean the difference between success and failure on a mission.
+                        He will trade, beg. borrow, and steal anything for the cause.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Sabotage</h2>
+                <p>The largest and most powerful military force in the history of the galaxy is also the most vulnerable
+                        to acts of destruction and asset denial. The character is focused on disrupting Imperial operations
+                        in any way possible, whether it's the manufacture of weapons, troop movements, supply shipments,
+                        banking systems, or any other key operation, in order to make the Empire act more slowly and less
+                        capably. Truly showy acts of destruction also work to erode a population's will to suppor t the Empire,
+                        or so the PC often believes (though the Alliance expressly forbids actual acts of terrorism).
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Space Superiority</h2>
+                <p>As the Combat Victory-driven PC feels about troop conflicts, so this Player Character feels about ship-to-ship
+                        combat and naval engagements. To him, the war will ultimately be decided in the stars, and what the
+                        Alliance lacks in sheer numbers, it more than makes up for in the quality and tenacity of its pilots.
+                        Every single space battle is an opportunit y to show the rest of the galaxy that the Alliance not
+                        only can win the war, but is destined to do so
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Tech Procurement</h2>
+                <p>There is no more prolific or productive time for technological developments than during a war, and this
+                        one is no exception. This Player Character sees the true opportunit y for Alliance victory in the
+                        hands of scientists, engineers, and technicians. Not only can they get the most performance from
+                        existing machines and resources, but they can design and develop new ships, weapons, medical techniques,
+                        and equipment that can provide the vital edge necessary to survive against the Empire's might. The
+                        way this PC sees it, stealing the best developments of the Empire is a crucial way to even the odds.
+                </p>
+                <hr>
+                <h2 class="dutyHeader">Support</h2>
+                <p>Individually, the lone agents of the Alliance don't stand a chance against the combined might of the Galactic
+                        Empire. Only by working together can they hope to achieve a victory in this civil war. This PC is
+                        devoted to helping fellow Rebels fulfill their Duties by providing whatever assistance they need.
+                        Although he might not get the same amount of reward or recognition as the people he is helping, the
+                        PC has many more opportunities than his fellows to fulfill his Duty to the Rebellion.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomDuty() {
+                        var duties = new Array("Combat Victory", "Counter-Intelligence", "Intelligence", "Internal Security", "Personnel", "Political Support", "Recruiting", "Resource Acquisition", "Sabotage", "Space Superiority", "Tech Procurement", "Support", "Re-roll twice, and split your duty evenly between the two you roll");
+                        var random = duties[Math.floor(Math.random() * duties.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>

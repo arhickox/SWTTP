@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Bounty Hunter Obligations</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="species_index.html">Species</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="equipment_index.html">Equipment</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="class_index.html">Classes</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+
+
+        <br>
+        <div class="Container" id="main_box">
+
+                <a href="obligations_index.html"><button type="button" class="btn btn-outline-dark" id="back_button">&#9668;
+                                Back
+                        </button></a>
+
+
+                <h1>Bounty Hunter Obligations</h1>
+
+                <div class="card">
+                        <div class="card-header">
+                                Random Obligation Generator
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Recommended default starting obligation (based on party size)</p>
+                                <ul style="list-style: none">
+                                        <li>2 Players: 20 Obligation</li>
+                                        <li>3 Players: 15 Obligation</li>
+                                        <li>4 Players: 10 Obligation</li>
+                                        <li>5 Players: 10 Obligation</li>
+                                        <li>6+ Players: 5 Obligation</li>
+                                </ul>
+                                <h5 class="card-title" id="message">Click button below to generate a random obligation</h5>
+                                <a href="#" class="btn btn-primary" onclick="randomOb();" id="generateObButton">Generate</a>
+                        </div>
+                </div>
+                <br>
+
+                <h2 class="obligationHeader">Thrill Seeker</h2>
+                <p>Some people are addicted to alcohol or chems, others to gambling or other seedy vices. This character,
+                        however, is a confirmed adrenaline junkie, and chooses bounties not by their challenge or price,
+                        but by how exciting or dangerous they are. Avoiding the Obligation—perhaps by being a responsible
+                        business operator and considering every job’s cost benefit analysis—results in an almost immediate
+                        case of excitement withdrawal. When inactive, the character is edgy, moody, easily distracted, and
+                        generally unpleasant to be around.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Vigilante</h2>
+                <p>The character has seen the wheels of justice grind up the innocent and let the guilty walk free. The character
+                        has sworn to take the law—or a version of it, at any rate—and bring justice to those who deserve
+                        it. When taking on contracts, this character tends to pursue the most hardened criminals.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Blackmail</h2>
+                <p>Some group or individual has dirt on the character, and is using it to the greatest advantage possible.
+                        Perhaps she killed another hunter and claimed the bounty, or maybe she is operating in the Core Worlds
+                        without the required Imperial Peace-Keeping Certificate. Whatever the case may be, the blackmailer
+                        wields an inordinate amount of power over the character. However this power is leveraged—money, favors,
+                        services rendered—the character is subject to the blackmailer’s moods and whims, lest the dirty secret
+                        become common knowledge.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Contract</h2>
+                <p>A powerful and strict contract binds the character to a specific employer. This could be a crime boss,
+                        an Imperial courtier, or a wealthy corporate CEO. Whoever holds the character’s contract has nearly
+                        total control over the character’s future career. All bounties are furnished by the contract holder,
+                        and deviating from the terms of the contract can lead to a number of potentially harsh fines and
+                        punishments.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Rule Breaker</h2>
+                <p>Either the character very publicly and flagrantly broke one of the rules laid down in the bounty hunter’s
+                        code, or everyone wrongly believes she did. Whatever the case, this breach of the rules of the code
+                        affects the character’s personal and professional life in a very real way. Contracts dry up, colleagues
+                        refuse to speak to or help the character, or the character is treated in a condescending or irritatingly
+                        sympathetic manner.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Debt</h2>
+                <p>The character owes quite a bit of money to one or more individuals. This could be money owed to a shipyard
+                        for some expensive modifications done to the character’s ship on credit, or funds put forth by a
+                        patron who backed the character’s entry into the bounty hunters’ guild and expects to be repaid or
+                        services rendered.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Betrayal</h2>
+                <p>In the course of the job, the character has either suffered some kind of deep personal betrayal at the
+                        hands of another bounty hunter, or is the perpetrator of such a betrayal. The betrayal affects the
+                        character’s day to day life, whether through physical reminders, emotional scars, or some combination
+                        of the two. If the character was the betrayer, the victim may come looking for answers, compensation,
+                        or revenge at any moment.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Family</h2>
+                <p>This hunter’s family holds an incredible influence over the character. Perhaps the PC comes from a long
+                        line of bounty hunters, whose honor must be upheld. Alternately, the bounty hunter could also be
+                        supporting a struggling family, and is always eager to pick up contracts to send money home.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Favor</h2>
+                <p>The character owes a favor to someone in a position of power. However this favor came about, whether personally
+                        or professionally, repayment of that favor is coming due with interest. This favor may be called
+                        in all at once, or a little at a time, prolonging the character’s Obligation.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Criminal</h2>
+                <p>The character has been accused of committing a crime during the collection of a legal bounty. This could
+                        be anything from stealing a speeder in order to chase a fleeing fugitive, or interference with bonded
+                        law enforcement to killing innocents during a shootout. Whatever the case, the constant threat of
+                        discovery and incarceration hovers over the character. Whether the accusations are true is irrelevant;
+                        the character has been accused and there is an outstanding warrant that makes the PC an appealing
+                        target to other bounty hunters.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Keeper of the Faith</h2>
+                <p>Much to many other freelancers’ amusement, this character has sworn to faithfully uphold both the spirit
+                        and the letter of some code of honor. The PC believes very strongly in these edicts and adheres to
+                        them with an almost religious fervor. The character never knowingly breaks any of the rules laid
+                        down in the code, and may turn on colleagues who do so.
+                </p>
+                <hr>
+                <h2 class="obligationHeader">Fame</h2>
+                <p>The character’s reputation casts a long shadow. Perhaps the PC took a famous and difficult bounty, or
+                        owns a recognizable and deadly ship, or has beaten another well-known hunter to the punch in the
+                        past. Whatever the case, it is hard for the character to move unnoticed throughout the galaxy. This
+                        makes covert operations more difficult, but also means that informants are more likely to spill what
+                        they know when the PC arrives.
+                </p>
+                <hr>
+
+
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+        <script>
+
+                function randomOb() {
+                        var obligations = new Array("Thrill Seeker", "Vigilante", "Blackmail", "Contract", "Rule Breaker", "Debt", "Betrayal", "Family", "Favor", "Criminal", "Keeper of the Faith", "Fame", "Re-roll twice, and split your obligation evenly between the two you roll");
+                        var random = obligations[Math.floor(Math.random() * obligations.length)];
+                        document.getElementById("message").innerHTML = random;
+                } 
+        </script>
+
+        <div class="footer_bar"></div>
+</body>
+
+</html>
