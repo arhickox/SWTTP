@@ -25,7 +25,6 @@ a {
     color: white;
 }
 
-
 #main_box {
     background-color: white;
     width: 960px;
@@ -45,7 +44,6 @@ a {
 .obligationHeader {
     text-align: center;
 }
-
 
 .dutyHeader {
     text-align: center;
@@ -73,9 +71,27 @@ a {
     src: url(fonts/aurebesh.ttf);
 }
 
+@font-face {
+    font-family: geosanslight;
+    src: url(fonts/GeosansLight.ttf);
+}
+
 .aurebesh_under {
     font-family: aurebesh;
     text-align: center;
+}
+
+.specialization_header {
+    font-family: geosanslight;
+    text-align: center;
+    font-size: 70px;
+}
+
+.specialization_subheader {
+    font-family: geosanslight;
+    text-align: center;
+    font-size: 40px;
+    color: #d4af37;
 }
 
 .weaponBody {
@@ -121,4 +137,12 @@ a {
     margin: 35px;
     color: white;
     border: 7px solid #d4af37;
+}
+
+.background_hr {
+    border: 1px solid #d4af37;
+}
+
+.bold-gold {
+    color: #d4af37;
 }
