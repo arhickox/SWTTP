@@ -29,7 +29,7 @@ a {
     background-color: white;
     width: 960px;
     padding: 25px;
-    margin: auto;
+    margin: 50px auto auto auto;
     color: #777777;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     line-height: 30px;
@@ -39,3 +39,30 @@ a {
 .weaponBody {
     padding: 30px;
 }
+
+@font-face {
+    font-family: geosanslight;
+    src: url(../fonts/GeosansLight.ttf);
+}
+
+.breadcrumb-item {
+    font-family: geosanslight;
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    color: #0077be;
+}
+
+.breadcrumb a:hover {
+    color: #004166;
+}
+
+.breadcrumb>.active {
+    color: black;
+}
+
+.breadcrumb-whole {
+    margin: auto 10px auto auto;
+}
+

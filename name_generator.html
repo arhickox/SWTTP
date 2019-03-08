@@ -24,31 +24,19 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Star Wars Tabletop Codex</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item" id="nav_item">
-          <a class="nav-link" href="species_index.html">Species</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="equipment_index.html">Equipment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="class_index.html">Classes</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <div class="text-uppercase ml-auto">
+    <nav aria-label="breadcrumb" class="breadcrumb-bar fixed-top">
+      <ol class="breadcrumb">
+        <a class="navbar-brand" href="index.html">
+          <span class="nav-logo">Star Wars Tabletop Compendium</span>
+        </a>
+        <div class="row breadcrumb-whole">
+          <li class="breadcrumb-item"><a class="" href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active">Name Generator</li>
+        </div>
+      </ol>
+    </nav>
+  </div>
 
   <br>
   <div class="Container" id="main_box">
@@ -61,10 +49,10 @@
 
         <h3 class="card-title" id="nameDisplay" style="text-align: center">Generate a Name</h3><br>
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-primary" onclick="randomMale();" id="maleButton">Male Name</button>
-          <button type="button" class="btn btn-primary" onclick="randomMaleNickname();" id="maleButtonNickname">Male Name with Nickname</button>
-          <button type="button" class="btn btn-danger" onclick="randomFemale();" id="femaleButton">Female Name</button>
-          <button type="button" class="btn btn-danger" onclick="randomFemaleNickname();" id="femaleButton">Female Name with Nickname</button>
+          <button type="button" class="btn btn-primary name-gen-button" onclick="randomMale();" id="maleButton">Male Name</button>
+          <button type="button" class="btn btn-primary name-gen-button" onclick="randomMaleNickname();" id="maleButtonNickname">Male Name with Nickname</button>
+          <button type="button" class="btn btn-danger name-gen-button" onclick="randomFemale();" id="femaleButton">Female Name</button>
+          <button type="button" class="btn btn-danger name-gen-button" onclick="randomFemaleNickname();" id="femaleButton">Female Name with Nickname</button>
         </div>
 
       </div>
