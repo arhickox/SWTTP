@@ -39,22 +39,17 @@ a {
 
 @font-face {
     font-family: aurebesh;
-    src: url(fonts/aurebesh.ttf);
-}
-
-@font-face {
-    font-family: geosanslight;
-    src: url(fonts/GeosansLight.ttf);
-}
-
-.aurebesh_under {
-    font-family: aurebesh;
-    text-align: center;
+    src: url(../fonts/aurebesh.ttf);
 }
 
 @font-face {
     font-family: geosanslight;
     src: url(../fonts/GeosansLight.ttf);
+}
+
+.aurebesh_under {
+    font-family: aurebesh;
+    text-align: center;
 }
 
 .breadcrumb-item {
@@ -80,4 +75,79 @@ a {
 
 .planets_wide_button {
     margin: 5px 0px 5px 20px;
+}
+
+.planet_image {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.planet_header {
+    font-family: geosanslight;
+    text-align: center;
+    font-size: 70px;
+}
+
+.planet_aurebesh {
+    font-family: aurebesh;
+    text-align: center;
+    font-size: 30px;
+}
+
+.planet-text-card {
+    background-color: #6C6C6E;
+    margin: 35px;
+    color: white;
+}
+
+.style-hr {
+    border: 1px solid;
+}
+
+.planet-subheader {
+    text-align: center;
+    font-family: geosanslight;
+    font-size: 30px;
+}
+
+.tooltip-target { position: relative; }
+
+.tooltip-content { 
+     display: none; 
+     position: absolute;
+     left: 50%;
+     top: -10px;
+}
+
+.tooltip-target:hover .tooltip-content {
+    display: block;
+}
+
+.species_wide_button {
+    margin: 10px;
+}
+
+.biome-image {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.astrogation-breadcrumb {
+   margin: auto;
+   color: white;
+}
+
+.active-planet {
+    color: #d4af37;
 }
