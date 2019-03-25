@@ -151,3 +151,11 @@ a {
 .active-planet {
     color: #d4af37;
 }
+
+.star-bg {
+    background-image: url(images/ep_naturalblack.png);
+}
+
+.alert {
+    margin: 10px 0px 0px 0px;
+}
